@@ -1,6 +1,7 @@
 mkdir $HOME/.pwnconfig
 
 # Download/setup pwndbg
+echo ""
 echo "##########################################"
 echo "#                                        #"
 echo "#           Installing PwnDbg            #"
@@ -14,6 +15,7 @@ cd $HOME/.pwnconfig/pwndbg
 ./setup.sh
 
 # Download splitmind
+echo ""
 echo "##########################################"
 echo "#                                        #"
 echo "#         Installing Splitmind           #"
@@ -24,6 +26,7 @@ echo ""
 git clone https://github.com/jerdna-regeiz/splitmind.git $HOME/.pwnconfig/splitmind
 
 # Apply everything
+echo ""
 echo "##########################################"
 echo "#                                        #"
 echo "#            Applying Configs            #"
@@ -37,6 +40,7 @@ echo "source $HOME/.pwnconfig/pwndbg/gdbinit.py" >> $HOME/.gdbinit
 echo "source $HOME/.pwnconfig/splitmind/gdbinit.py" >> $HOME/.gdbinit
 cat ./splitmind.conf >> $HOME/.gdbinit
 
+echo ""
 echo "##########################################"
 echo "#                                        #"
 echo "#               Finished!                #"
