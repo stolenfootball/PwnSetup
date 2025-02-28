@@ -18,3 +18,14 @@ chmod +x setup.sh
 
 ## Use
 Start a tmux instance, then run gdb.  That's it!
+
+## Notes
+This sometimes fails on older versions of Debian.  If you see an error during install, do the following:
+1. Run `revert.sh`
+2. Install Rust from the internet, not apt.  This can be done with the following command:
+   - `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+   - Use the default option (1) when installing Rust.
+   - When the installer finishes, run `source $HOME/.cargo/env`
+3. Run `sudo apt install libssl-dev`
+
+Now rerun `setup.sh`, and everything should install properly.
