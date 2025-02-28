@@ -15,3 +15,6 @@ cd PwnSetup
 chmod +x setup.sh
 ./setup.sh
 ```
+
+## Use
+Start a tmux instance, then run gdb.  That's it!
