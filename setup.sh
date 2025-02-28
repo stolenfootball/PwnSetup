@@ -1,4 +1,5 @@
 mkdir $HOME/.pwnconfig
+cp ./splitmind.conf $HOME/.pwnconfig
 
 # Download/setup pwndbg
 echo ""
