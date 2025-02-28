@@ -38,7 +38,7 @@ cp $HOME/.gdbinit $HOME/.pwnconfig/.gdbinit.old
 
 echo "source $HOME/.pwnconfig/pwndbg/gdbinit.py" >> $HOME/.gdbinit 
 echo "source $HOME/.pwnconfig/splitmind/gdbinit.py" >> $HOME/.gdbinit
-cat ./splitmind.conf >> $HOME/.gdbinit
+cat $HOME/.pwnconfig/splitmind.conf >> $HOME/.gdbinit
 
 echo ""
 echo "##########################################"
