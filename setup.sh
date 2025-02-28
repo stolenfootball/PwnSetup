@@ -11,5 +11,5 @@ git clone https://github.com/jerdna-regeiz/splitmind.git
 
 # Apply everything
 echo "source $HOME/.pwnconfig/pwndbg/gdbinit.py" >> $HOME/.gdbinit 
-echo "source $HOME/.pwnconfig/splitmind/gdbinit.py\n" >> $HOME/.gdbinit
+echo "source $HOME/.pwnconfig/splitmind/gdbinit.py" >> $HOME/.gdbinit
 cat ./splitmind.conf >> $HOME/.gdbinit
